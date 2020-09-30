@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -24,4 +30,152 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+article, figure {
+  margin: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  color: #3783a3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.h1japanese {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.h1english {
+  margin: 0;
+}
+
+.g {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: .3rem;
+  border: .2rem solid #3783a3;
+  padding: .5em 1em .6em .5em;
+  margin-bottom: 1rem;
+}
+
+.push {
+  margin-bottom: 3.5rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 4;
+    align-items: flex-start;
+    margin: 0 1rem;
+    gap: 1rem;
+  }
+
+  .push {
+    margin-bottom: 2rem;
+  }
+
+  .banner {
+    display: grid;
+    grid-column: 1 / 1;
+  }
+
+  header, .g {
+    text-align: left;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.125rem;
+  }
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .h1english {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .viewing {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .gravel {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .symbolism {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .push {
+    margin-bottom: 3.5rem;
+    color: #e2e2e2;
+  }
+
 }
